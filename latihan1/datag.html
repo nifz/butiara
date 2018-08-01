@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple CRUD by Tutorialweb.net</title>
+</head>
+<body>
+	<h2>Simple CRUD</h2>
+
+<p><a href="index.html">Beranda</a> / 
+   <a href="tambah.html">Tambah Data</a> / 
+   <a href="listg.html">List Guru</a> / 
+   <a href="datag.html">Data Guru</a></p>
+
+	<h3>Tambah Data Guru</h3>
+
+	<form action="tambah-guru.php" method="post">
+		<table cellpadding="3" cellspacing="0">
+			<tr>
+				<td>NPK</td>
+				<td>:</td>
+				<td><input type="text" name="NIS" required></input></td>
+			</tr>
+			<tr>
+				<td>Nama</td>
+				<td>:</td>
+				<td><input type="text" name="nama" required></input></td>
+			</tr>			
+			<tr>
+				<td>Jenis Kelamin</td>
+				<td>:</td>
+				<td><input type="radio" name="selection" required>Perempuan</input>
+				<input type="radio" name="selection" required>Laki-Laki</input></td>
+			</tr>
+			<tr>				
+			<tr>
+				<td>Alamat</td>
+				<td>:</td>
+				<td><textarea rows="4" cols="21"></textarea></td>
+			</tr>	
+			<tr>
+				<td>Status</td>
+				<td>:</td>
+				<td>
+					<select name="status" required>
+						<option value="">Pilih Status</option>
+						<option value="X">Pegawai Negeri Sipil</option>
+						<option value="XI">Honorer</option>
+						<option value="XII">Kontrak</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Jenis Pelatian</td>
+				<td>:</td>
+				<td><input type="checkbox" name="android" required>Pemograman Android</input><br/>
+					<input type="checkbox" name="iso" required>Instalasi Sistem Operasi</input><br/>
+					<input type="checkbox" name="pedagogig" required>Pedagogig</input><br/>
+					<input type="checkbox" name="pa" required>Psikologi Anak</input>
+			</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td></td>
+				<td><input type="submit" name="tambah" value="Tambah"></input></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
